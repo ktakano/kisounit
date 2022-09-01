@@ -1,3 +1,4 @@
+# coding: utf-8
 # Written by K. Takano
 
 # 入力が1つの場合の例
