@@ -14,11 +14,11 @@ def load_mnist():
 
     return (mnist['train_image'], mnist['train_label']), (mnist['test_image'], mnist['test_label'])
 
-def to_one_hot_label(_label):
-    one_hot_label = np.zeros((_label.size, NUM_CLASSES))
-    for idx, row in enumerate(one_hot_label):
-        row[_label[idx]] = 1
-    return one_hot_label
+def to_one_hot(num_label):
+    one_hot = np.zeros((num_label.size, NUM_CLASSES))
+    for idx, row in enumerate(one_hot):
+        row[num_label[idx]] = 1
+    return one_hot
 
 from PIL import Image
 def show_mnist(mnist_img):
